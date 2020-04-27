@@ -14,7 +14,8 @@
         "node": true
     },
     "rules": {
-      "no-new":"off"
+      "no-new":"off",
+      "no-unused-vars":"warn"
     },
     "plugins": ["import", "promise", "compat","html"]
 }

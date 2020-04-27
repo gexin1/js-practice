@@ -2,7 +2,7 @@
  * @Author: river
  * @Date: 2020-04-09 11:33:23
  * @Last Modified by: river
- * @Last Modified time: 2020-04-09 14:11:19
+ * @Last Modified time: 2020-04-27 10:57:39
  */
 const { resolve, getEntry, getHtmls } = require('./webpack.help');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -11,7 +11,6 @@ const config = require('./config');
 const entry = getEntry();
 const htmls = getHtmls();
 const devMode = process.env.NODE_ENV !== 'production';
-// console.log([...config.buildSpeed, "babel-loader"])
 module.exports = {
     entry,
     output: {
@@ -40,6 +39,8 @@ module.exports = {
                 exclude: /node_modules/,
                 options: {
                     fix: true,
+                    failOnError: false,
+                    quiet: true,
                     formatter: require('eslint-friendly-formatter'),
                 },
             },
