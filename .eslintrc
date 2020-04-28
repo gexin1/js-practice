@@ -15,7 +15,8 @@
     },
     "rules": {
       "no-new":"off",
-      "no-unused-vars":"warn"
+      "no-unused-vars":"warn",
+      "no-self-compare":"warn",
     },
     "plugins": ["import", "promise", "compat","html"]
 }

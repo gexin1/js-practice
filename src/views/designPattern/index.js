@@ -33,4 +33,7 @@ Visitor(访问者)	为类增加新的操作而不改变类本身。
 // https://www.w3cschool.cn/zobyhd/36729ozt.html
 
 // import "./constructor-mode";
-import './modular-mode';
+
+// import './modular-mode';
+
+import './singleton';
