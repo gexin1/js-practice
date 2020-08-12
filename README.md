@@ -1,5 +1,4 @@
-# webpack-multi-page
-
-### 项目简述
-
-使用webpack打包多页面项目
+```javascript
+//深度flat
+const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFlatten(v) : v)));
+```
